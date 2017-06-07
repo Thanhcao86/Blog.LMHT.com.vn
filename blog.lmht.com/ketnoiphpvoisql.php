@@ -10,7 +10,7 @@
 $link = mysqli_connect('localhost','root','','blogdota2');//host namw, tên user, passord, ten database. trả về giá trị bollen
 if(!$link)
 {
-	die('ket noi khong thanh con');//ngắt luôn
+	die('ket noi khong thanh cong');//ngắt luôn
 }
 else{
 	echo "ket noi thanh cong";

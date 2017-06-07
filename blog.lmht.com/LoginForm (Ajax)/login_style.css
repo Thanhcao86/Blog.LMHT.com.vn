@@ -1,3 +1,62 @@
+
+#loginform
+{
+ width:500px;
+ height:330px;
+ margin-top:100px;
+ background-color:#16a085;
+ border-radius:3px;
+ box-shadow:0px 0px 10px 0px #424242;
+ padding:10px;
+ box-sizing:border-box;
+ font-family:helvetica;
+ visibility:hidden;
+ display:none;
+}
+#loginform #close_login
+{
+ position:absolute;
+ top:140px;
+ left:735px;
+ 
+}
+#loginform p
+{
+ margin-top:40px;
+ font-size:22px;
+ color:#E6E6E6;
+}
+#loginform #login
+{
+ width:250px;
+ height:40px;
+ border:2px solid silver;
+ border-radius:3px;
+ padding:5px;
+}
+#loginform #password
+{
+ margin-top:5px;
+ width:250px;
+ height:40px;
+ border:2px solid silver;
+ border-radius:3px;
+ padding:5px;
+}
+#loginform #dologin
+{
+ margin-left:-5px;
+ margin-top:10px;
+ width:250px;
+ height:40px;
+ border:none;
+ border-radius:3px;
+ color:#E6E6E6;
+ background-color:#c0392b;
+ font-size:20px;
+}
+
+/*---------------------------------------------------*/
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -122,6 +181,7 @@ input, textarea {
 input:focus, textarea:focus {
   outline: 0;
   border-color: #1ab188;
+
 }
 
 textarea {
@@ -241,4 +301,16 @@ button{
     border-color: #1B607F;
     box-shadow: 0 1px 0 rgba(120,200,230,0.6) inset;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.3)
+}
+#dologin
+{
+ margin-left:-5px;
+ margin-top:10px;
+ width:250px;
+ height:40px;
+ border:none;
+ border-radius:3px;
+ color:#E6E6E6;
+ background-color:#c0392b;
+ font-size:20px;
 }

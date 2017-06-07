@@ -177,14 +177,6 @@ sub {
     top: .5ex;
 }
 input[type="text"],
-textarea {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 1px 1px 1px rgba(0,0,0,0.1);
-    padding: 2px;
-}
 a:link {
     /*color: #c33d2b;*/
     color:#b2b9b7;
@@ -799,7 +791,8 @@ code {
     position:relative;
     padding:0;
     margin:10px 0px 18px 0px;
-    background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/searchbar_bg.jpg');
+
+    background-image:url('../public/searchbar_bg.jpg');
 }
 #searchform {
     margin:0;
@@ -1007,7 +1000,7 @@ a.rightColDotaLink,a.rightColDotaLink:hover,a.rightColDotaLink:visited,a.rightCo
     height:207px;
     position:relative;
     margin:11px 0px 0px 9px;
-    background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_feedback_bg.png');
+    background-image:url('../public/rightcol_feedback_bg.png');
 }
 #feedbackForums,#feedbackContact,#feedbackSupport {
     position:absolute;

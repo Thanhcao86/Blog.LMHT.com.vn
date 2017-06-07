@@ -1,5 +1,5 @@
 <html lang="en-US">
-<head>
+<head Content-Type: text/html; charset=utf-8>
 
 <script type="text/javascript" src="jquery/jquery.js"></script>
 <script language="javascript">
@@ -22,8 +22,24 @@ var languageMap = {
 <meta charset="UTF-8" />
 <title>Lengend of Lengend</title>
 <link rel="stylesheet" type="text/css" media="all" href="thêm/style.css" />
+
+
+
+<script language=JavaScript>
+var message="";function clickIE() {if (document.all) {(message);return false;}}function clickNS(e) {if (document.layers||(document.getElementById&&!document.all)) {if (e.which==2||e.which==3) {(message);return false;}}}if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;document.onselectstart=clickIE}document.oncontextmenu=new Function("return false")
+</script>
+<script language=JavaScript>
+var message="";function clickIE() {if (document.all) {(message);return false;}}function clickNS(e) {if (document.layers||(document.getElementById&&!document.all)) {if (e.which==2||e.which==3) {(message);return false;}}}if (document.layers) {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;document.onselectstart=clickIE}document.oncontextmenu=new Function("return false")
+</script>
+
+
 </head>
-<body class="home blog">
+
+
+
+<body class="home blog" >
+
+
 <div id="navBarShadowOnly"></div>
 
 <div id="navBarBGRepeat" style="display:none;">
@@ -32,7 +48,7 @@ var languageMap = {
 		<div id="navBarBG">
 			<div id="navBar">
 				<div id="navLoginAndLanguage">
-				<a href="login/login.html"><button id ="idlogin">login</button></a>
+				<a href="LoginForm (Ajax)/index.php"><button id ="idlogin">login</button></a>
 					<div id="languageSelector">
 						<a href="javascript:void(0)">Language</a> <img style="padding-bottom: 2px;" src="public/btn_arrow_down.png" width="9" height="4" border="0" /><br />
 						<div style="display:none;" id="languageList">
@@ -46,6 +62,14 @@ var languageMap = {
 								<a class="languageItem" href="#">Chinese</a>
 						</div>
 					</div>
+
+						<h4>
+				 	<?php
+				 	echo "Now:";
+				 	date_default_timezone_set('Asia/Ho_Chi_Minh');
+				 	echo date('d/m/Y - H:i:s');
+				 	?>
+				 	</h4>
 				</div>
 				<span class="navItem navItemLMLogo">
 					<a class="navBarItem DotaFont" href="#">
@@ -54,7 +78,7 @@ var languageMap = {
 				</span>
 
 				<span class="navItem">
-					<a class="navBarItem DotaFont" href="#">Watch<sup>BETA</sup></a>
+					<a class="navBarItem DotaFont" href="video/video.php">Watch<sup>BETA</sup></a>
 				</span>
 
 				<span class="navItem">
@@ -158,7 +182,7 @@ jQuery(document).ready( function () {
 </script>
 <script language="javascript">
 </script>
-<div id="calloutHeader" style="background-image:url('public/bg_thebetaisover.jpg');">
+<div id="calloutHeader" style="background-image:url('public/ioin.jpg');">
 </div>
 </div>
 <div id="mainContentSideBG">
@@ -167,18 +191,18 @@ jQuery(document).ready( function () {
 			
 			<div id="noTabArea"></div>
 			<div id="tabArea" style="display:none;">
-				<div style="margin-left:4px;">
-					<a href="?" class="btn_tab_on fl_left">
+				<div class = "xagan" style="margin-left:4px;">
+					<a href="?">
 						<div class="btn_left"></div>
-						<div class="btn_right"></div>BLOG</a>
+						<div class="btn_right"></div><img src="public/anh3.jpg"></a>
 						<div class="tab_split"></div>
-					<a href="Update.html" class="btn_tab fl_left">
+					<a href="Update.html">
 						<div class="btn_left"></div>
-						<div class="btn_right"></div>UPDATES</a>
+						<div class="btn_right"></div><img src="public/anh1.jpg"></a>
 					<div class="tab_split"></div>
-					<a href="blogchat.html" class="btn_tab fl_left">
+					<a href="Update/baidang.php">
 						<div class="btn_left"></div>
-						<div class="btn_right"></div>Thảo Luận</a>
+						<div class="btn_right"></div><img src="public/anh2.jpg"></a>
 					<div class="tab_split"></div>
 				</div>
 			</div>
@@ -215,7 +239,12 @@ jQuery(document).ready( function () {
 					);
 					</script>
 
- 	<a class="hoverBG rcbLink" href="#" target="_blank" style="background-image:url('public/rcb_700a.jpg');"><img width="256" height="164" border="0" /></a>
+		<div>
+	
+ 	<div class="hoverBG rcbLink" href="#" target="_blank" style="background-image:url('public/rcb_700a.jpg');"><img width="256" height="164" border="0" alt=""/>
+ 	</div>
+ 	
+ 	</div>
 			<!-- Main Ngang -->
 			<div id="recentPostsTopBar"><img src="public/rightcol_recentposts_top.png" width="294" height="10" border="0" /></div>
 			<div id="recentPostsSearchArea">
@@ -255,6 +284,10 @@ jQuery(document).ready( function () {
 			</div>
 			</div>
 			</div>
+
+
+
+
 			<!-- menu Trái -->
 			<a class="hoverBG" id="lbLink" href="#" style="background-image:url('public/rcb_leaderboards.png');"><img width="262" height="48" border="0" /></a>
 
@@ -267,7 +300,6 @@ jQuery(document).ready( function () {
 
 				<a id="dotaLinkImgYoutube" class="rightColDotaLinkImg" href="#" target="_blank"><img src="public/link_icon_youtube.png" width="20" height="24" border="0" /></a>
 				<a id="dotaLinkYoutube" class="rightColDotaLink" href="#" target="_blank">YouTube</a>
-
 				<a id="dotaLinkImgSteam" class="rightColDotaLinkImg" href="#" target="_blank"><img src="public/link_icon_steam.png" width="24" height="24" border="0" /></a>
 				<a id="dotaLinkSteam" class="rightColDotaLink" href="#" target="_blank">Steam</a>
 			</div>
@@ -289,113 +321,154 @@ jQuery(document).ready( function () {
 					<div class="nav-previous"><a href="main/page/2.html" ><span class="meta-nav">&larr;</span> Older posts</a></div>
 					<div class="nav-next"></div>
 					</div>
-			<div id="post-11390" class="post-11390 post type-post status-publish format-standard hentry category-uncategorized">
-			<h2 class="entry-title"><a href="#" title="Permalink to The International 2017 Battle Pass" rel="bookmark">The International 2017 Battle Pass</a></h2>
-
-			<div class="entry-meta">
-				May 4, 2017 - LOL Team	
-				</div><!-- .entry-meta -->
-				<div class="entry-content">
-				<p><a href="#""><img src="public/bl_bpimg_2017.jpg" alt="" width="100%" /></a></p>
-				<br clear="left" />
-				</div><!-- .entry-content -->
-				</div>
 
 
 
 		<!-- Main Chính -->
-		<div class="dota_rule"></div>
-			<div id="post-11342" class="post-11342 post type-post status-publish format-standard hentry category-uncategorized">
-					<h2 class="entry-title"><a href="#" title="Permalink to Matchmaking Update" rel="bookmark">Huyền Thoại Trở Lại.!</a></h2>
-				<div class="entry-meta">
-				April 23, 2017 - LOL Team
-				</div><!-- .entry-meta -->
+			<div class="dota_rule"></div>	
+				<div class="entry-meta"></div><!-- .entry-meta -->
 				<div class="entry-content">
 				<p><img src="public/sona.jpg" alt="" width="100%" /></p>
 				<br clear="left" />
 				</div><!-- .entry-content -->
-	
-			</div><!-- #post-## -->
+				<div>
+				
 
-		<div class="dota_rule"></div>
-			<div id="post-11370" class="post-11370 post type-post status-publish format-standard hentry category-uncategorized">
-			<h2 class="entry-title"><a href="#" title="The Champions" rel="bookmark"> SKTT1 Team Work.!</a></h2>
-			<div class="entry-meta">
-				May 2, 2017 - LOL Team	
-				</div><!-- .entry-meta -->
-				<div class="entry-content">
-				<p><img src="public/sktteam.jpg" alt="" width="100%" /></p>
-					<br clear="left" />
+		<?php
+		
+         $dbhost = 'localhost';
+         $dbuser = 'root';
+         $dbpass = '';
+         $rec_limit = 10;
+         $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+         
+         if(! $conn )
+         {
+            die('Không thể lấy dữ liệu: ' . mysql_error());
+         }
+         mysql_select_db('bloglmht');
+         
+         /* lấy tổng số bản ghi */
+         $sql = "SELECT count(id_tintuc) FROM tintuc ";
+         $retval = mysql_query( $sql, $conn );
+         
+         if(! $retval )
+         {
+            die('Không thể lấy dữ liệu: ' . mysql_error());
+         }
+         $row = mysql_fetch_array($retval, MYSQL_NUM );
+         $rec_count = $row[0];
+         
+         if( isset($_GET{'page'} ) )
+         {
+            $page = $_GET{'page'} + 1;
+            $offset = $rec_limit * $page ;
+         }
+         else
+         {
+            $page = 0;
+            $offset = 0;
+         }
+         $left_rec = $rec_count - ($page * $rec_limit);
+
+         $sql = "SELECT * ".
+            "FROM tintuc ".
+            "LIMIT $offset, $rec_limit";
+            
+         $retval = mysql_query( $sql, $conn );
+         //mysqli_set_charset($conn,'UTF8');
+         if(! $retval )
+         {
+            die('Không thể lấy dữ liệu: ' . mysql_error());
+         }
+         
+         while($row = mysql_fetch_array($retval, MYSQL_ASSOC))
+         {
+         	
+           			echo "<div id='post-11342' class='post-11342 post type-post status-publish format-standard hentry category-uncategorized'>
+					<h2 class='entry-title'><a href='tintuc.php?id=$row[id_tintuc]'>$row[title]</a></h2>";
+					echo "<div>$row[tom_tat]</div>";
+					echo "$row[ngay_dang]"."-LOL Team";
+					echo "<img src='$row[picture]'>";
+					echo "</div>";
+					echo "<div class='dota_rule'></div>";
+         }
+         
+         if( $page > 0 )
+         {
+            $last = $page - 2;
+            echo "<span class='meta-nav'>&larr;</span><a href=\"?page=$last\">Recent Post</a> |";
+            echo "<a href=\"?page=$page\"> Older Post</a>";
+         }
+         //$_PHP_SELF
+         else if( $page == 0 )
+         {
+            echo "<span class='meta-nav'>&larr;</span><a href=\"?page=$page\">Older post</a>";
+			}
+			
+         else if( $left_rec < $rec_limit )
+         {
+            $last = $page - 2;
+            echo "<span class='meta-nav'>&larr;</span><a href=\"?page=$last\">Recent Post</a>";
+         }
+         
+         mysql_close($conn);
+      ?>
+
+
+				
+				<!-- <?php
+				$link =mysqli_connect('localhost','root','','bloglmht');
+				mysqli_set_charset($link,'UTF8');
+				$sql= "select * from tintuc ORDER BY id_tintuc DESC";
+				$result= mysqli_query($link, $sql);
+				while ($row = mysqli_fetch_assoc($result)) { //cps thể dùng mysqli_fetch_assoc
+					if ($row) {
+					//header("Content-type: image/jpeg");
+					echo "<div id='post-11342' class='post-11342 post type-post status-publish format-standard hentry category-uncategorized'>
+					<h2 class='entry-title'><a href='tintuc.php?id=$row[id_tintuc]'>$row[title]</a></h2>";
+					echo "<div>$row[tom_tat]</div>";
+					echo "$row[ngay_dang].'-LOL Team'";
+					echo "<img src='$row[picture]'>";
+					echo "</div>";
+					echo "<div class='dota_rule'></div>";
+				}
+				else{
+				echo "Image '$_REQUEST[name]' is not found";
+				 }
+				}
+				//đóng kết nối
+				//mysql_close($link);
+				?> -->
+
+
+
+
+
+
 				</div>
-			</div>
 
-		<div class="dota_rule"></div>
-					<div id="post-11342" class="post-11342 post type-post status-publish format-standard hentry category-uncategorized">
-					<h2 class="entry-title"><a href="#" title="Permalink to Matchmaking Update" rel="bookmark">CKTG Coming.!</a></h2>
-				<div class="entry-meta">
-				April 20, 2017 - LOL Team
-				</div><!-- .entry-meta -->
-				<div class="entry-content">
-				<p><img src="public/cktg.jpg" alt="" width="100%" /></p>
-				<br clear="left" />
-				</div><!-- .entry-content -->
-	
-			</div><!-- #post-## -->
-
-		<div class="dota_rule">
-		</div>
-			<div id="post-11313" class="post-11313 post type-post status-publish format-standard hentry category-uncategorized">
-			<h2 class="entry-title"><a href="#" title="Permalink to The Kiev Major and Beyond" rel="bookmark">Go to MSI</a></h2>
-			<div class="entry-meta">
-				April 19, 2017 - LOL Team
-				</div><!-- .entry-meta -->
-				<div class="entry-content">
-				<p><img src="public/gotomsi.jpg" alt="" width="100%" /></p>
-					<br clear="left" />
-				</div><!-- .entry-content -->
-
-			</div><!-- #post-## -->
-		<div class="dota_rule">
-		</div>
-			<div id="post-11290" class="post-11290 post type-post status-publish format-standard hentry category-uncategorized">
-			<h2 class="entry-title"><a href="#" title="" rel="bookmark">The first champange coming soon</a></h2>
-			<div class="entry-meta">
-				April 14, 2017 - LOL Team			</div><!-- .entry-meta -->
-				<div class="entry-content">
-				<p><img src="public/fistsoon.jpg" width="100%" /></p>
-					<br clear="left" />
-					</div><!-- .entry-content -->
-					</div>
-		<div class="dota_rule">
-
-		</div><!-- #post-## -->
-			<div id="nav-below" class="navigation">
-				<div class="nav-previous"><a href="main/page/2.html" ><span class="meta-nav">&larr;</span> Older posts</a></div>
-				<div class="nav-next"></div>
-				</div><!-- #nav-below -->
-				<br clear="right" />
-			</div>
-		</div><!-- /mainContent -->
-	</div>
-	</div>
 	<!-- Main -->
-	<div id="footer" role="contentinfo">
-			<div id="footer-widget-area" role="complementary">
 
-				<div id="first" class="widget-area">
-					<ul class="xoxo">
-						<li id="dota2-recent-posts-4" class="widget-container valve_widget_recent_entries">
-							<div class="rightLinksTitle">Previous Entries</div>		
-							<div class="archive_column">
-							<div class="recent_entry">
-							<a href="#">The finnaly in the world</a>
-							<div class="recent_entry_date">May. 2 2017</div>
-							</div>
-							<div class="recent_entry">
+
+			
+	<!-- div cuối -->
+	<div id="footer" role="contentinfo">
+		<div id="footer-widget-area" role="complementary">
+
+			<div id="first" class="widget-area">
+				<ul class="xoxo">
+					<li id="dota2-recent-posts-4" class="widget-container valve_widget_recent_entries">
+						<div class="rightLinksTitle">Previous Entries</div>		
+						<div class="archive_column">
+						<div class="recent_entry">
+						<a href="#">The finnaly in the world</a>
+						<div class="recent_entry_date">May. 2 2017</div>
+						</div>
+				<div class="recent_entry">
 				<a href="LCK.html" title="Matchmaking Update">LCK</a>
 				<div class="recent_entry_date">Apr. 20 2017</div>
-			</div>
-			<!-- div cuối -->
+				</div>
 			<div class="recent_entry">
 				<a href="CKH.html" title="The Kiev Major and Beyond">Chung Kết Hè</a>
 				<div class="recent_entry_date">Apr. 19 2017</div>

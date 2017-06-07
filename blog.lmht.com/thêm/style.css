@@ -688,6 +688,7 @@ code {
 	.entry-content {
 		font-size: 14pt;
 		line-height: 1.6em;
+		background-image: url('../public/content_bg_top.jpg');
 	}
 	.entry-title {
 		font-size: 21pt;
@@ -1147,7 +1148,7 @@ a.rightColDotaLink,a.rightColDotaLink:hover,a.rightColDotaLink:visited,a.rightCo
 	height:207px;
 	position:relative;
 	margin:11px 0px 0px 9px;
-	background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/rightcol_feedback_bg.png');
+	background-image:url('../public/rightcol_feedback_bg.png');
 }
 #feedbackForums,#feedbackContact,#feedbackSupport {
 	position:absolute;
@@ -1259,7 +1260,6 @@ li {
 	width:2px;
 	height:38px;
 	margin-top:4px;
-	background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/tab_split.png');
 }
 
 /* --------------- button crap -------------- */
@@ -1300,51 +1300,6 @@ li {
 .btn_right {
 	background-position:top right;
 	right:-2px;
-}
-
-/* tab, tab_on, with rollover */
-.btn_tab,.btn_tab_on {
-	background-position:top;
-}
-.btn_tab {
-	background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/tab_ro_bg.png');
-}
-.btn_tab_on {
-	background-image:url('http://cdn.dota2.com/apps/dota2/images/blogfiles/2014/tab_on_ro_bg.png');
-}
-a.btn_tab, a.btn_tab:hover, a.btn_tab:visited {
-	text-decoration:none;
-	color:#cacaca;
-	text-shadow: -1px -1px 2px rgba(0, 0, 0, 1);
-}
-a.btn_tab_on, a.btn_tab_on:hover, a.btn_tab_on:visited {
-	text-decoration:none;
-	color:#0a1a1e;
-}
-.btn_tab .btn_left, .btn_tab .btn_right {
-}
-.btn_tab_on .btn_left, .btn_tab_on .btn_right {
-}
-
-/* rollover state */
-.btn_tab:hover, .btn_tab_on:hover {
-	background-position:bottom;
-}
-.btn_tab:hover .btn_left, .btn_tab_on:hover .btn_left {
-	background-position:bottom left;
-}
-.btn_tab:hover .btn_right, .btn_tab_on:hover .btn_right {
-	background-position:bottom right;
-}
-
-/* -------------- end buttons ----------------- */
-
-.pagePrevNextLinks {
-	margin:20px 0px 120px 0px;
-	z-index:100;
-}
-.pageNextLink {
-	float:right;
 }
 
 /* ------------- from publicheader.css -------------- */
@@ -1580,4 +1535,7 @@ a.navBarItem:hover {
 	background-color: black;
 	width: 40px;
 	height: 20px;
+}
+.xagan{
+	background-image: url("../public/anhnen.jpg");
 }
